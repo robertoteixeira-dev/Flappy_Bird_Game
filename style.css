@@ -1,0 +1,97 @@
+@import url(//db.onlinewebfonts.com/c/b2e75c336df191233b3096682c9ee6be?family=PixelarRegularW01-Regular);
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: "PixelarRegularW01-Regular";
+    color: white;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+body{
+    margin: 0;
+    overflow: hidden;
+}
+
+#score{
+    position: fixed;
+    top: 20px;
+    left:20px;
+    
+}
+
+#gameoverscreen{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#gameoverscreen .backgrop{
+    background: black;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+
+#gameoverscreen .title,
+#gameoverscreen .score,
+#gameoverscreen button{
+    position: absolute;
+    z-index: 1;
+    left: calc(50% - 102px);
+    width: 204px;
+    top: 40%;
+    text-align: center;
+    color: rgba(255, 255, 74);
+}
+
+#gameoverscreen .title{
+    margin-top: -65px;
+    font-size: 50px;
+}
+
+#game{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: url('./images/world.jpg');
+    background-position: center left;
+}
+
+#block{
+    width: 45px;
+    height: 100vh;
+    background: url('./images/blockbg.jpg');
+    background-position: center;
+    background-size: contain;
+    position: relative;
+}
+
+#hole{
+    width: 46px;
+    height: 193px;
+    position: relative;
+    top: -500px;
+    background: url('./images/holebg.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#block, #hole{
+    left: 35vw;
+}
+
+#character{
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    background: url('./images/bird.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 20vh;
+    left: 20vw;
+}
